@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Med.Egov.Lib.Model
 {
-    public class Patient
+    public class Patient:People
     {
-        public string Name { get; set; }
-        public string Surname { get; set; }
-        public string MiddleName { get; set; }
+        //public string Name { get; set; }
+        //public string Surname { get; set; }
+        //public string MiddleName { get; set; }
 
         private string IIN_;
         public string IIN
@@ -27,6 +27,23 @@ namespace Med.Egov.Lib.Model
             }
         }
         public MedOrg MedOrg { get; set; } = null;
+
+        public Patient():base()
+        {
+        }
+        public Patient(string name, string surname, string middleName = "") :base(name, surname, middleName)
+        {
+        }
+
+        public override void PrintInfo()
+        {
+            base.PrintInfo();
+            Console.WriteLine("Приклеплен к: {0}", MedOrg);
+        }
+        public override double GetDiscount()
+        {
+            return 0.2;
+        }
 
     }
 }
