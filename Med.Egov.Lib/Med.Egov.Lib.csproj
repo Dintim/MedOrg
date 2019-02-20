@@ -57,7 +57,9 @@
     <Compile Include="Model\Patient.cs" />
     <Compile Include="Model\People.cs" />
     <Compile Include="Model\Request.cs" />
+    <Compile Include="Model\ServiceMedOrg.cs" />
     <Compile Include="Model\ServiceRequest.cs" />
+    <Compile Include="Model\ServiceUser.cs" />
     <Compile Include="Model\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

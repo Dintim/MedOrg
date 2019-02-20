@@ -27,7 +27,7 @@ namespace Med.Egov.Lib.Model
             }
         }
         public MedOrg MedOrg { get; set; } = null;
-
+        public int MedOrgId { get; set; }
         public Patient():base()
         {
         }
